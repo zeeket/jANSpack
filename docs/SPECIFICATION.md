@@ -1,19 +1,43 @@
 # Project specification
 
-    ## What data structures and algorithms will you be using?
+## What data structures and algorithms will you be using?
 
-        I will be using the asymmetric numeral systems- method to compress files.
+I will be using the asymmetric numeral systems- method to compress files.
 
-    What problem are you solving and why did you chose these specific data structures and algorithms
+##What problem are you solving and why did you chose these specific data structures and algorithms
 
-        I am solving the problem of compressing data to hopefully allow it to take up less space in computer memory or transmit data with a smaller amount of bits.
+I am solving the problem of compressing data to hopefully allow it to take up less space in computer memory or transmit data with a smaller amount of bits.
 
-    What is the program input and how will it be used
+##What is the program input and how will it be used
 
-        The program input is a file on the user's system
+The program input is a file on the user's system
 
-    Expected time and space complexities of the program (big-O notations)
+##Expected time and space complexities of the program (big-O notations)
 
-        
+ANS is a lossless compression algorithm. The input for this program is a list of bytes from a file from Java's datastream. Its output is a sequence of bytes written in a compressed file. Each byte S has a fixed known probability P<sub>S</sub> of occurring in the list. The algorithm tries to assign each list a unique sequence of bytes as an identifier so that the more probable lists get a smaller identifier.
 
-    Sources
+* Encoding
+
+iterative/recursive algorithm:
+
+    Start with the bytes 0x00;
+    If the current byte value is n, and the incoming byte corresponds to a byte s, update the bytes to be s+n⋅B.
+
+
+
+* Decoding
+
+corecursive algorithm
+
+
+    Start with the number that we are decoding;
+    Split the current number n into the quotient and remainder modulo B;
+    Emit the remainder and continue decoding the quotient;
+    Stop when the current number reaches 1.
+
+
+
+
+Each byte has a fixed known probability in a file
+
+##Sources
