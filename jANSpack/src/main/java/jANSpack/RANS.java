@@ -16,10 +16,9 @@ public class RANS {
      */
 
     
-    public RANS(InputStream input, boolean verbose) {
-
-        DataInputStream reader = new DataInputStream(input);
-        byte[] inputByteArray = new byte[]
-
+    public Pack RANS(byte[] inputByteArray, boolean verbose) {
+        
+        
+        return null;
     }
 }
