@@ -9,16 +9,30 @@ package jANSpack;
 
  
 public class RANS {
-        /**
-     * Some VMs reserve some header words in an array.
-     * Attempts to allocate larger arrays may result in
-     * OutOfMemoryError: Requested array size exceeds VM limit
-     */
-
     
-    public Pack RANS(byte[] inputByteArray, boolean verbose) {
+    /**
+     * @param inputByteArray
+     * @param verbose
+     * @return 
+     */
+    public int[] decodingTable;
+    
+    public RANS(byte[] inputByteArray, boolean verbose) {
+        long key = 1;
         
+        for(int i=0;i<inputByteArray.length;i++){
+                    if(verbose){
+                        System.out.print((char) inputByteArray[i]);
+        }
+                    
+        }
+
+        decodingTable = new int[10];
         
-        return null;
     }
+    
+    public Pack getPack(){
+        return new Pack(12345,decodingTable);
+    }
+    
 }
