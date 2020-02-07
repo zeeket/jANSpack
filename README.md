@@ -12,3 +12,4 @@ Java program to pack files using an asymmetric numeral system algorithm. Tiralab
 [Weekly diary 1](docs/viikkoraportit/viikko1.md)
 [Weekly diary 2](docs/viikkoraportit/viikko2.md)
 [Weekly diary 3](docs/viikkoraportit/viikko3.md)
+[Weekly diary 4](docs/viikkoraportit/viikko4.md)
